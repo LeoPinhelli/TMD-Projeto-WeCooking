@@ -1,0 +1,95 @@
+.receipt-index,
+.receipt-index-2,
+.receipt-index-3,
+.receipt-search,
+.favorites,
+#similar {
+    .receita {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0vh 0.4vh 1vh #00000040;
+        border-radius: 1vh;
+        background-color: #fff;
+
+        padding: 2vh;
+
+        .tag {
+            text-transform: capitalize;
+
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            align-items: center;
+            justify-content: space-between;
+
+            .fa-star {
+                color: #F78C2F;
+            }
+
+            .avalFav {
+                position: absolute;
+                visibility: hidden;
+            }
+        }
+
+        .tag p {
+            color: #7F858D;
+            font-weight: 400;
+        }
+
+        .receipt_image {
+            height: 21vh;
+            width: 16vw;
+            object-fit: cover;
+            border-radius: 1vh;
+            margin: 1vh 0vw;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            align-items: center;
+            justify-content: space-between;
+
+            margin-top: 3vh;
+
+            .fa-heart {
+                font-size: 3vh;
+                color: red;
+            }
+
+            .tempo {
+                color: #7F858D;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .receita p {
+        overflow: hidden;
+        word-break: break-word;
+        
+        white-space: nowrap;
+        display: -webkit-box;
+
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        
+
+        width: auto
+    }
+}
+
+.receipt-index a,
+.receipt-index-2 a,
+.receipt-index-3 a,
+.receipt-search a,
+.favorites a,
+#similar a {
+    margin-bottom: 5vh;
+    color: #000;
+    text-decoration: none;
+}

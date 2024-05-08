@@ -1,0 +1,7 @@
+.receipt-index, .receipt-index-2, .receipt-index-3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+    place-items: center;
+    margin-top: 4vh;
+}

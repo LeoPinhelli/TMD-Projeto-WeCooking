@@ -1,0 +1,168 @@
+.active {
+    color: green;
+    background-color: lightgreen;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.sorting {
+    cursor: pointer;
+}
+
+.inactive {
+    color: red;
+    background-color: pink;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.dataTables_wrapper {
+    margin-top: 4vh;
+}
+
+.dataTables_length {
+    width: fit-content;
+    position: absolute;
+}
+
+.dataTables_length select {
+    border: 0.1vh solid #F78C2F;
+    outline: none;
+    font-size: 1.8vh;
+    font-weight: 600;
+
+    padding: 0.2vh 1.5vw 0.2vh 0.5vw;
+
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+
+    background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') 100% 50% no-repeat transparent;
+    ;
+    background-size: 3vh;
+
+    border-radius: 0.8vh;
+}
+
+.dataTables_filter {
+    width: fit-content;
+    margin-left: auto;
+    margin-bottom: 2vh;
+}
+
+
+.dataTables_filter input[type='search'] {
+    margin-left: 1vw;
+
+    outline: none;
+    border: 0.1vh solid #c3c3c3;
+    font-size: 1.8vh;
+
+    padding-block: 0;
+    padding-inline: 0;
+
+    padding: 0.4vh 0.5vw;
+
+    border-radius: 0.8vh;
+}
+
+#tabela_receitas {
+    margin-top: 2vh;
+    border-spacing: 0;
+    width: 100%;
+
+    .table_row {
+        width: 100%;
+        background-color: #D9D9D9;
+        display: table;
+
+        padding: 1vh 0vw;
+    }
+}
+
+thead {
+    margin-bottom: 0.6vh;
+}
+
+thead tr {
+    width: 100%;
+}
+
+thead tr th {
+    text-align: center;
+    padding: 0 2vw;
+}
+
+.dataTables_empty {
+    background-color: #c1c1c1;
+    display: table;
+    padding: 1vh 0vw;
+    width: 100% !important;
+}
+
+tbody tr {
+    border-bottom: 0.1vh solid #fff;
+    padding: 1.4vh 0vw;
+}
+
+tbody tr td {
+    text-align: center;
+    padding: 0 2vw;
+}
+
+thead tr th:nth-child(1) {
+    width: 3vw !important;
+}
+
+tbody tr td:nth-child(1) {
+    width: 3vw;
+}
+
+.dataTables_info,
+.dataTables_paginate {
+    width: fit-content;
+}
+
+.dataTables_paginate {
+    margin-left: auto;
+    margin-bottom: 2vh;
+}
+
+.dataTables_info {
+    margin-top: 2vh;
+}
+
+.dataTables_info {
+    position: absolute;
+}
+
+.dataTables_paginate {
+    display: flex;
+    gap: 1vw;
+    margin-top: 2vh;
+
+    .paginate_button {
+        cursor: pointer;
+    }
+
+    .disabled {
+        color: #c1c1c1;
+    }
+}
+
+.dataTables_paginate span {
+    display: flex;
+    gap: 0.5vw;
+
+    .current {
+        color: #F78C2F;
+        font-weight: 700;
+    }
+}

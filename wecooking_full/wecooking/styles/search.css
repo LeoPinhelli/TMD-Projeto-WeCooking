@@ -1,0 +1,93 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 5vh;
+
+    .filter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        width: 100%;
+
+        .filter-by {
+            margin-left: auto;
+        }
+
+        .select-order {
+            font-size: 2vh;
+            border-radius: 2vh;
+
+            border: 0.1vh solid #c1c1c1;
+            padding: 0.8vh 1vw;
+            outline: none;
+
+            margin-left: 1vw;
+
+            transition: 0.5s;
+
+
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') 100% 50% no-repeat transparent;
+            background-size: 3vh;
+        }
+
+        .select-order:focus {
+            box-shadow: inset 0.3vh 0.3vh 0.3vh #00000040;
+        }
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        width: 100%;
+        margin-top: 3vh;
+
+        .filters {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+
+            .preparo {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2vh;
+            }
+
+            .preparo label,
+            .preparo #amount {
+                white-space: nowrap;
+            }
+
+            .ui-slider-horizontal {
+                width: 10vw;
+                height: 1.5vh;
+            }
+        }
+
+        .main {
+            width: 100%;
+            margin-left: 4vw;
+
+            .receipt-search {
+                display: grid;
+                grid-template-columns: auto auto auto;
+
+                place-items: center;
+            }
+        }
+    }
+}
+
+.fade {
+    opacity: 0.3;
+}
+
+.search {
+    align-self: flex-end;
+    margin-top: 2vh;
+}
